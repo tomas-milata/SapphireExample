@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+  
+  
+  <extension point="org.eclipse.ui.editors">
+    <editor
+      id="org.eclipse.sapphire.samples.tomas"
+      class="org.eclipse.sapphire.samples.tomas.Editor"
+      default="true"
+      filenames="my.xml"
+      name="Diagram SAmple (Sapphire Sample)"/>
+  </extension>
+
+</plugin>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<definition>
+    <import>
+        <package>org.eclipse.sapphire.samples.sqlschema</package>
+    </import>
+    <diagram-page>
+        <id>DiagramPage</id>
+        <element-type>org.eclipse.sapphire.samples.tomas.Root</element-type>
+        <connection-service-type>standard</connection-service-type>
+        <node>
+            <id>Derived1</id>
+            <property>Bases</property>
+            <tool-palette-label>Derived1</tool-palette-label>
+            <connection-binding>
+                <connection-id>Next</connection-id>
+                <property>Nexts</property>
+                <endpoint2>
+                    <property>To</property>
+                    <value>${id}</value>
+                </endpoint2>
+            </connection-binding>
+            <text>
+                <content>D1</content>
+            </text>
+            <model-element-type>org.eclipse.sapphire.samples.tomas.Derived1</model-element-type>
+        </node>
+        <node>
+            <id>Derived2</id>
+            <property>Bases</property>
+            <tool-palette-label>Derived2</tool-palette-label>
+            <connection-binding>
+                <connection-id>Next</connection-id>
+                <property>Nexts</property>
+                <endpoint2>
+                    <property>To</property>
+                    <value>${id}</value>
+                </endpoint2>
+            </connection-binding>
+            <text>
+                <content>D2</content>
+            </text>
+            <model-element-type>org.eclipse.sapphire.samples.tomas.Derived2</model-element-type>
+        </node>
+        <connection>
+            <id>Next</id>
+            <endpoint2>
+                <type>arrow</type>
+            </endpoint2>
+            <tool-palette-label>Next</tool-palette-label>
+        </connection>
+    </diagram-page>
+</definition>
